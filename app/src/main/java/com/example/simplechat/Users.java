@@ -47,8 +47,8 @@ public class Users extends AppCompatActivity {
         }
         if(item.getItemId() == R.id.profilebtn)
         {
-            //Intent intent1 = new Intent(this,UserProfile.class);
-            //this.startActivity(intent1);
+            Intent intent1 = new Intent(this,UserProfile.class);
+            this.startActivity(intent1);
             return true;
         }
         return true;
@@ -97,7 +97,7 @@ public class Users extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 UserDetails.chatWith = al.get(position);
-                //startActivity(new Intent(Users.this, Chat.class));
+                startActivity(new Intent(Users.this, Chat.class));
             }
         });
     }
